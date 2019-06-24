@@ -20,9 +20,9 @@ console.log(
 // user interaction
 const run = async () => {
     let token = github.getStoredGithubToken();
-    if(!token) {
-      await github.setGithubCredentials();
-      token = await github.registerNewToken();    
+    if (!token) {
+        await github.setGithubCredentials();
+        token = await github.registerNewToken();
     }
     console.log(token);
 }
